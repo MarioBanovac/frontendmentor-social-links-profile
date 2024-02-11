@@ -1,0 +1,162 @@
+/* CUSTOM CSS VARIABLES  */
+
+:root {
+  
+  /* COLORS */
+  
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkGrey: hsl(0, 0%, 12%);
+  --offBlack: hsl(0, 0%, 8%);
+  
+  /* FONT SIZE */
+  --fs-default: 14px;
+  --fs-small: 11px;
+  
+  /* FONT FAMILY */
+  --ff-default: 'Inter', sans-serif;
+  
+  /* FONT WEIGHTS */
+  --fw-normal: 400;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+}
+
+/* -------------------------- */
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------- */
+
+
+/* UTILITY CLASSES */
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+/* -------------------------- */
+
+body {
+  font-family: var(--ff-default);
+  background-color: var(--offBlack);
+  height: 100vh;
+  color: var(--white);
+}
+
+
+ul {
+  list-style: none;
+}
+
+li, a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection{
+  background-color: var(--green);
+  color: var(--grey);
+}
+
+.profile-card {
+  background-color: var(--darkGrey);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  margin-bottom: 8px;
+  font-weight: var(--fw-semiBold);
+}
+
+.profile-location {
+  color: var(--green);
+  font-size: var(--fs-default);
+  margin-bottom: 16px;
+}
+
+.profile-description {
+  margin-bottom: 12px;
+  font-size: var(--fs-default);
+}
+
+.profile-links {
+  width: 100%;
+}
+
+.profile-link {
+  background-color: var(--grey);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: var(--fw-semiBold);
+  transition: all .3s;
+  cursor: pointer;
+  display: block;
+}
+
+.profile-link > a {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+}
+
+.profile-link:hover {
+  background-color: var(--green);
+  color: var(--offBlack);
+}
+
+.profile-link > a:focus {
+  outline: 2px solid var(--green);
+  border-radius: 8px;
+}
+
+
+.profile-link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.attribution {
+  font-size: var(--fs-small);
+}
+
+.attribution-link {
+  color: var(--green);
+}
+
+
+
+
