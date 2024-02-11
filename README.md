@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://frontendmentor-social-links-profile.vercel.app/)
+- Live Site URL: [https://frontendmentor-social-links-profile.vercel.app/]
 
 ## My process
 
